@@ -1,0 +1,19 @@
+### Create new transaction
+POST http://localhost:9090/v1/transactions
+
+{
+  "value": 10000,
+  "currency": "USD",
+  "description": "Dress Black/Small",
+  "method": "DEBIT",
+  "card_number": "348699999",
+  "card_holder_name": "Jane Doe",
+  "card_expiration_date": "04/30",
+  "card_cvv": "290"
+}
+
+### List all transactions
+GET http://localhost:9090/v1/transactions
+
+### List all Payables
+GET http://localhost:9090/v1/payables
